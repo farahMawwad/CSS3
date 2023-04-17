@@ -1,0 +1,67 @@
+@keyframes car {
+    from {
+    transform: translateX(0px);
+    }
+    to {
+transform: translateX(900px);
+    }
+  }
+  
+  @keyframes circle {
+    to {
+stroke-dashoffset: 50;
+  }}
+  @keyframes polyline {
+    from{ transform: translateX(00px);}
+    to {
+stroke-dashoffset: 0;
+  }}
+  #poly {
+    transition: stroke-dashoffset 3s ;
+    stroke-dashoffset: 150;
+    animation:polyline 2s forwards infinite;
+  }
+  .car {
+    animation:car 7s linear infinite  ;
+  }
+.car circle {
+    transition: stroke-dashoffset 1s ;
+    animation: circle 1s linear infinite;
+}
+@keyframes car {
+    from {
+    transform: translateX(0px);
+    }
+    to {
+transform: translateX(900px);
+    }
+  }
+  
+  @keyframes circle1 {
+    to {
+stroke-dashoffset: 200;
+  }}
+  @keyframes polyline {
+
+    to {
+stroke-dashoffset: 0;
+  }}
+
+  .car1 {
+    animation:car 3s linear infinite ;
+  }
+.car1 circle {
+    animation: circle1 1s linear infinite;
+}
+
+@keyframes circle2 {
+    to {
+stroke-dashoffset: 20;
+  }}
+.car2 {
+    animation:car 15s linear infinite ;
+  }
+.car2 circle {
+
+    animation: circle2 1s linear infinite;
+}
